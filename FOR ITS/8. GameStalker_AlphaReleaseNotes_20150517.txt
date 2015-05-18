@@ -1,0 +1,184 @@
+=====================================================================
+[PROJECT NAME]............ GameStalker
+[RELEASE VERSION]......... 00.05.02
+[RELEASE DATE]............ 2015/05/17
+[PLATFORM / VERSION]...... XAMPP Version: 1.8.3
+                           Windows Version: Windows 8  64-bit
+                           Apache Tomcat 6.0.35
+
+[SUPPORTED MODULES] ------------------------------------------------
+	
+    1.Log In
+    2.Normal user - user side
+	-registration
+    3.Dropdown News, Walkthrough, and Review
+	-View Article
+    4.Forgot Password
+    5.Admin - admin side
+	-Add, retrieve users, Edit user information
+	-Add, retrieve,edit,delete articles
+	-Edit Account Information
+	-block or unblock user
+	-approve user as contributor
+    6.Contributor - admin side
+	-Add, retrieve,edit,delete articles
+    7.COMMENT
+	-Add, retrieve,edit,delete comment
+    8. Log Out
+
+
+[LIMITATIONS] -------------------------------------------------------
+
+    1. When a new user applies to become a contibutor but not yet approve cannot login.
+
+
+[KNOWN BUGS] --------------------------------------------------------
+    
+	1. <UT- 672> :[UT][Article]Co filtering of attachments
+        2. <UT- 683> :[UT][MANAGEMENT]Admin add user with limitless characters for password
+        3. <UT- 685> :[UT][FORGOT PASSWORD]No error message
+        4. <UT- 703> :[UT][LOGIN]User Applying as Contributor
+    
+[FIXED BUGS] --------------------------------------------------------
+
+	1. <UT- 612> :[LOG IN]No Fixed Length of Input for email, username and password
+        2. <UT- 613> :[UT][HOMEPAGE_LATEST ARTICLE]No Latest Article 
+        3. <UT- 614> :[UT][HOMEPAGE]Carousel Image Link
+        4. <UT- 615> :[UT][HOMEPAGE]Forget Password
+        5. <UT- 623> :[UT][WALKTHROUGH]Sequence of Picture
+        6. <UT- 624> :[UT][COMMENT]No Comment
+        7. <UT- 625> :[UT][HOMEPAGE]Carousel Image with text
+        8. <UT- 626> :[UT][REGISTER]Register form
+        9. <UT- 627> :[UT][ADMIN_MANAGEMENT]Block, and Unblock
+        10. <UT- 628> :[UT][ADMIN_HOMEPAGE]Header Exchange Dropdown
+        11. <UT- 629> :[UT][ADMIN_MANAGEMENT]Approve Button
+        12. <UT- 641> :[UT][ARTICLE]Admin Edit Article
+        13. <UT- 650> :[UT][COMMENT]Text Box is draggable
+        14. <UT- 651> :[UT][ARTICLE]Description Box Is Draggable
+        15. <UT- 652> :[UT][ADMIN]No comment in view all article
+        16. <UT- 656> :[UT][EDIT PROFILE]Contributor check box
+        17. <UT- 657> :[UT][COMMENT]Timestamp
+        18. <UT- 658> :[UT][COMMENT]Sorting
+        19. <UT- 660> :[UT][HOMEPAGE]Log In Prompt Message
+        20. <UT- 661> :[UT][ARTICLE]Carousel Appearance in Article
+        21. <UT- 662> :[UT][COMMENT]Exchange comment and the one posted the comment
+        22. <UT- 663> :[UT][HOMEPAGE]Latest Article VIew
+        23. <UT- 664> :[UT][ADMIN]Update User change to Update Profile
+        24. <UT- 665> :[UT][Profile]No Duplicate Username Error Message
+        25. <UT- 666> :[UT][Profile]No Existing E-mail Error Message
+        26. <UT- 667> :[UT][Article]Article Description Exceeds The Box
+        27. <UT- 668> :[UT][Article]Disabled Operation should be deleted
+        28. <UT- 669> :[UT][Admin_Management]Editing mismatched password wrong error message
+        29. <UT- 670> :[UT][Comment]Comment appearance
+        30. <UT- 671> :[UT][Article]Submit button to Save Changes
+        31. <UT- 679> :[UT][REGISTER] No limit fields
+        32. <UT- 680> :[UT][MANAGEMENT]Admin can register user with no limit fields
+        33. <UT- 681> :[UT][MANAGEMENT]Echoed error message instead of Pop up
+        34. 
+        35. 
+[RELEASE FILES] -----------------------------------------------------
+
+    1. <Compressed File>
+     Filename: gs.rar
+    2. <DATABASE BACKUP FILENAME>
+     Filename: gamestalker_DB_20150510.sql
+    3.<Installation manual>
+     Filename: Game Stalker_Installation Manual.pdf
+    4.<Requirement Specification>
+     Filename: GameStalker_Requirements_Specification_V5.xls
+    5. <Screen Def>
+     Filename: GameStalker_ScreenDef_V6.xls
+    6.<IT Specification>
+     Filename: GameStalker_IT Specs.xls
+    7.<IT Status MOnitoring>
+     Filename: GameStalker_IT Status Monitoring_20150518-20150520.xls
+    8. <Alpha release>
+     Filename: GameStalker_AlphaReleaseNotes_20150517_00.05.02.xls
+    9. <LOC COUNT>
+     LOC: 125,925	
+
+
+[ADDED FILES] -------------------------------------------------------
+    
+    1.Latest Article
+	C:\xampp\htdocs\gs\application\views\homepage.php
+
+[MODIFIED FILES]  ---------------------------------------------------
+
+    1. Homepage:
+	Homepage&Latest Article:C:\xampp\htdocs\gs\application\views\homepage.php
+		C:\xampp\htdocs\gs\application\views\admhomepage.php	
+        LogIn:C:\xampp\htdocs\gs\application\views\homepage.php
+		C:\xampp\htdocs\gs\application\views\admloginpage.php
+	Registration:C:\xampp\htdocs\gs\application\views\registration.php
+
+    2. Articles
+	News:C:\xampp\htdocs\gs\application\views\news.php
+	Review:C:\xampp\htdocs\gs\application\views\reviews.php
+	Walkthrough:C:\xampp\htdocs\gs\application\views\walkthrough.php
+	View All Article:C:\xampp\htdocs\gs\application\views\adm_content_data.php
+	Add:C:\xampp\htdocs\gs\application\views\add_article.php
+	Edit:C:\xampp\htdocs\gs\application\views\edit_content.php
+
+    3.Comment
+	C:\xampp\htdocs\gs\application\views\insertComment.php
+
+    4.Management
+	Add User:C:\xampp\htdocs\gs\application\views\adm_registration.php.php
+	View User:C:\xampp\htdocs\gs\application\views\viewusers.php
+	Edit User Info:C:\xampp\htdocs\gs\application\views\adm_update_registration.php
+	Block/Unblock User:C:\xampp\htdocs\gs\application\views\ blocked.php
+
+    5. Settings
+	Edit Account Info: C:\xampp\htdocs\gs\application\views\update_power.php
+
+    6. Update User Info:
+	  C:\xampp\htdocs\gs\application\views\ user_update_info.php 	
+
+    7. LogOut
+	C:\xampp\htdocs\gs\application\views\logout.php
+
+	5.Admin
+	-Update Status
+		C:\xampp\htdocs\gs\application\views\viewusers.php
+
+
+[REMOVED FILES] -----------------------------------------------------
+
+	N/A
+    
+[VIRUS CHECK] -------------------------------------------------------
+
+    1. Avast Software
+       Version 9.0.2018
+
+
+[SPECIAL COMMENTS] --------------------------------------------------
+
+    N/A 
+
+
+[DESTINATION] -------------------------------------------------------
+- The release files can be accessed in the following location
+
+    1.  C:\Users\Stephann Repollo\Documents\SOFTENG\Deliverables\04_Coding\Release_Templates_GameStalker\Releases\Code Demo 5
+
+
+[RELEASE MEMO] ------------------------------------------------------
+- The release notes is sent to the following recipients
+
+    1. Erwin Sarmiento       			<esarmiento0302@gmail.com>
+    2. Christian Rey Ompad   			<christianompad@gmail.com>
+    3. Alexis Rivera         			<testfilee15@gmail.com>
+    4. Glaiza Kate Mateo/Mary Stephann Repollo  <gkfm93@gmail.com/marystephann@gmail.com>
+
+
+
+=====================================================================
+
+APPROVED BY: Christian Rey Ompad
+
+//nothing follows
+
+
+
